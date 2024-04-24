@@ -2,6 +2,8 @@
 Example main file for sample Python package.
 """
 
+import os
+
 
 def main() -> int:
     """
@@ -10,7 +12,7 @@ def main() -> int:
     Returns:
         int: Default run code.
     """
-    print("Running main.")
+    print(f"Ran function <main> within <{os.path.realpath(__file__)}>")
     return 0
 
 
