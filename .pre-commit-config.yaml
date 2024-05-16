@@ -46,15 +46,3 @@ repos:
           python,
         ]
         verbose: true
-      - id: pytest
-        name: Pytest
-        entry: poetry run coverage run -m pytest tests
-        pass_filenames: false
-        language: system
-        verbose: true
-      # - id: coverage
-      #   name: Coverage
-      #   entry: poetry run coverage report --fail-under=50 --skip-empty --skip-covered --show-missing
-      #   pass_filenames: false
-      #   language: system
-      #   verbose: true

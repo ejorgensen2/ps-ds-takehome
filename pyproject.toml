@@ -1,13 +1,15 @@
 [tool.poetry]
-name = "sample-python"
+name = "ps-ds-takehome"
 version = "0.0.1"
-description = "Sample Python repository."
+description = "Pluralsight Takehome Assessment Python repository."
 authors = ["First Last <name@example.com>"]
-packages = [{include = "sample-python", from = "src"}]
+packages = [{include = "ps_ds_takehome", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-pytest-testdox = "^3.1.0"
+pandas = "^2.2.2"
+matplotlib = "^3.9.0"
+scikit-learn = "^1.4.2"
 
 [tool.poetry.dev-dependencies]
 autoflake = "^2.2.1"
@@ -15,24 +17,11 @@ isort = "^5.13.2"
 black = "^24.2.0"
 mypy = "^1.8.0"
 pylint = "^3.0.3"
-pytest = "^8.0.0"
 coverage = "^7.4.1"
 pre-commit = "^3.6.1"
 
 [tool.poetry.scripts]
-sample-python = "sample-python.example:main"
-
-[tool.pytest.ini_options]
-pythonpath = [
-  "src"
-]
-testpaths = [
-  "tests"
-]
-addopts = [
-  "--basetemp=/tmp/pytest",
-  "--testdox"
-]
+sample-python = "ps-ds-takehome.example:main"
 
 [tool.black]
 line-length = 120
@@ -71,7 +60,7 @@ exclude = [
 ignore_missing_imports = true
 
 [tool.coverage.run]
-source = ["src", "tests"]
+source = ["src"]
 omit = []
 
 [build-system]
