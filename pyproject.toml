@@ -2,7 +2,7 @@
 name = "ps-ds-takehome"
 version = "0.0.1"
 description = "Pluralsight Takehome Assessment Python repository."
-authors = ["Erik Jorgensen <name@example.com>"]
+authors = ["E J <name@example.com>"]
 package-mode = false
 
 [tool.poetry.dependencies]

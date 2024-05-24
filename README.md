@@ -1,5 +1,5 @@
 ## Pluralsight DS Take-Home Assessment
-Completed by: Erik Jorgensen
+Completed by: EJ
 
 ### Setup instructions
 
